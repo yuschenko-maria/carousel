@@ -9,7 +9,7 @@ nextButton.addEventListener('click', function(){
         nextButton.setAttribute("disabled", "true");
     }
     else{
-        nextButton.disabled("false");
+        nextButton.disabled = false;
         }
     carousel.style.left = -offset + 'px';
 });
