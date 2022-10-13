@@ -1,0 +1,10 @@
+@import url("reset.css");
+
+li{
+    list-style: none;
+}
+.carousel{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
