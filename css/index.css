@@ -47,6 +47,9 @@ img{
     margin-right: 4px;
     transform: rotate(225deg);
 }
+.off-button{
+    background-color: cadetblue;
+}
 .carousel__wrapper{
     width: 456px;
     margin: 0 auto;

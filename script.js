@@ -7,20 +7,21 @@ nextButton.addEventListener('click', function(){
     offset += 140;
     if (offset >= 420){
         nextButton.setAttribute("disabled", "true");
+        nextButton.classList.add('off-button');
     }
-    else{
-        nextButton.disabled("false");
-        }
+    prevButton.disabled = false;
+    prevButton.classList.remove('off-button');
+        
     carousel.style.left = -offset + 'px';
 });
 prevButton.addEventListener('click', function(){
     offset -= 140;
     if (offset === 0){
         prevButton.setAttribute("disabled", "true");
+        prevButton.classList.add('off-button');
     }
-    else{
-        prevButton.removeAttribute('disabled');
-    }
+    nextButton.disabled = false;
+    nextButton.classList.remove('off-button');
     carousel.style.left = -offset + 'px';
 });
 
